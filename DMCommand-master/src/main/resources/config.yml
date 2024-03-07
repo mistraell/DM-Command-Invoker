@@ -1,0 +1,15 @@
+config-load-message: "command sender config loaded successfully"
+on-join-commands:
+  on-join-tick-delay: 10
+  commands:
+    - "skills modifier removeall %player_Name%"
+on-server-left-commands:
+  commands:
+    - "skills modifier removeall %player_Name%"
+on-player-joined-world-commands:
+  on-world-changed-delay: 10
+  worlds:
+    world:
+      - "skills modifier removeall %player_Name%"
+    hhh:
+      - "gamemode adventure %player_Name%"
